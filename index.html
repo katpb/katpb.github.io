@@ -1,86 +1,377 @@
-<!DOCTYPE html>
-<!--
-<html>
-  <head>
-    <title>Kathir Prabhakaran's Portfolio</title>
-  </head>
-  <body>
-    <h1>Welcome to my website</h1>
-  </body>
-</html> 
--->
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>Kathir | Software Engineer (Backend, Cloud, Distributed Systems)</title>
+  <meta name="description" content="Kathir — backend-focused software engineer building reliable, scalable services on Java/Kotlin, Kafka, and AWS. Tech lead with product-minded execution." />
+  <meta name="theme-color" content="#0b1220" />
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
+  <!-- OpenGraph (nice link preview when you share) -->
+  <meta property="og:title" content="Kathir | Software Engineer" />
+  <meta property="og:description" content="Backend, Cloud, Distributed Systems — Java/Kotlin, Kafka, AWS. Reliable delivery + pragmatic architecture." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://katpb.github.io/" />
 
-    <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <title>Portfolio - Kathir | Lifelong learner, experimenter and cloud enthusiast</title>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <body>
-    <nav>
-      <h1>Under construction...123</h1>
-      <!--<h1>kathir prabhakaran</h1>
-      <ul class="navigation">
-        <li><a href="#about" class="nav-link">about</a></li>
-        <li><a href="#skills" class="nav-link">skills</a></li>
-        <li><a href="#projects" class="nav-link">projects</a></li>
-        <li><a href="#contact" class="nav-link">contact</a></li>
-      </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-      </button>-->
-    </nav>  
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
 
-    <!-- Hero Section -->
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
 
-    <!-- More about -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <a href="#" class="brand-name">Kathir</a>
+      </div>
 
-    <!-- Skills section -->
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-    <!-- Projects section -->
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+          <span id="themeIcon" aria-hidden="true">☾</span>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      </div>
+    </div>
 
-    <!-- Contact section -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="container mobile-menu-inner">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
 
-    <!-- Social accounts - Fixed to the right -->
+  <main id="content">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="badge">Backend • Cloud • Distributed Systems</p>
+          <h1 class="headline">
+            I build reliable, scalable services that teams can ship with confidence.
+          </h1>
+          <p class="subhead">
+            I’m <strong>Kathir</strong> — a backend-focused engineer and tech lead working with
+            <strong>Java/Kotlin</strong>, <strong>Spring Boot</strong>, <strong>Kafka</strong>, and <strong>AWS</strong>.
+            I like clean architecture, pragmatic delivery, and production-grade observability.
+          </p>
 
-    <!-- Scroll to top -->
+          <div class="cta-row">
+            <a class="btn primary" href="#contact">Work with me</a>
+            <a class="btn ghost" href="#projects">See projects</a>
+            <a class="btn link" href="https://github.com/katpb" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <!-- Optional: add your LinkedIn here -->
+            <!-- <a class="btn link" href="https://www.linkedin.com/in/your-handle/" target="_blank" rel="noreferrer">LinkedIn ↗</a> -->
+          </div>
 
-    <!-- Footer section -->
+          <div class="quick-metrics">
+            <div class="qm">
+              <div class="qm-num">13+ yrs</div>
+              <div class="qm-label">Engineering experience</div>
+            </div>
+            <div class="qm">
+              <div class="qm-num">Java/Kotlin</div>
+              <div class="qm-label">Backend expertise</div>
+            </div>
+            <div class="qm">
+              <div class="qm-num">AWS + Kafka</div>
+              <div class="qm-label">Cloud & event-driven</div>
+            </div>
+          </div>
+        </div>
 
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
+        <div class="hero-card" aria-label="Highlights">
+          <div class="hc-top">
+            <div class="avatar" aria-hidden="true">K</div>
+            <div>
+              <div class="hc-name">Kathir</div>
+              <div class="hc-role">Software Engineer • Tech Lead</div>
+            </div>
+          </div>
 
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+          <ul class="hc-list">
+            <li>Design & ship microservices with strong APIs and contracts</li>
+            <li>Event-driven pipelines (Kafka) with production reliability patterns</li>
+            <li>Performance tuning, cost optimization, and observability (metrics/traces/logs)</li>
+            <li>Mentor teams, improve engineering feedback loops, and raise delivery quality</li>
+          </ul>
+
+          <div class="hc-footer">
+            <a class="chip" href="#skills">What I use</a>
+            <a class="chip" href="#projects">What I build</a>
+            <a class="chip" href="#contact">Say hi</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>My default mode: simplify complexity, build stable systems, and help teams ship.</p>
+        </div>
+
+        <div class="card grid-2">
+          <div>
+            <h3>How I work</h3>
+            <p>
+              I focus on building services that are easy to operate in production:
+              strong contracts, safe rollouts, clear dashboards/alerts, and careful trade-offs
+              on scale, latency, and cost.
+            </p>
+            <p>
+              I enjoy pairing with teams to reduce incidents, improve throughput, and create
+              feedback loops that keep engineering healthy.
+            </p>
+          </div>
+
+          <div>
+            <h3>What I’m optimizing for</h3>
+            <ul class="bullets">
+              <li><strong>Reliability:</strong> fewer surprises, faster recovery</li>
+              <li><strong>Scalability:</strong> predictable performance under load</li>
+              <li><strong>Clarity:</strong> docs, runbooks, and ownership</li>
+              <li><strong>Pragmatism:</strong> ship value without over-engineering</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p>Tools and patterns I reach for when building production systems.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Backend</h3>
+            <div class="tags">
+              <span class="tag">Java</span><span class="tag">Kotlin</span><span class="tag">Spring Boot</span>
+              <span class="tag">REST</span><span class="tag">Async</span><span class="tag">Testing</span>
+              <span class="tag">Design patterns</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Distributed Systems</h3>
+            <div class="tags">
+              <span class="tag">Kafka</span><span class="tag">Event-driven</span><span class="tag">Idempotency</span>
+              <span class="tag">Retries/DLQ</span><span class="tag">Backpressure</span><span class="tag">Sagas</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Cloud & Ops</h3>
+            <div class="tags">
+              <span class="tag">AWS</span><span class="tag">Docker</span><span class="tag">Kubernetes</span>
+              <span class="tag">CI/CD</span><span class="tag">Observability</span><span class="tag">Cost tuning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>Pick 2–4 things you want to be hired for. Keep them crisp and measurable.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card project">
+            <div class="project-top">
+              <h3>Telemetry Processing & Normalization</h3>
+              <span class="pill">Kafka • AWS • Microservices</span>
+            </div>
+            <p>
+              Built an ingestion/normalization pipeline with strong reliability patterns:
+              idempotency, dead-letter handling, backpressure-friendly consumers, and dashboards.
+            </p>
+            <ul class="bullets">
+              <li>Designed topic strategy + consumer scaling approach</li>
+              <li>Added metrics for lag, hot-path latency, and drop reasons</li>
+              <li>Runbooks + alerts for production readiness</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn link" href="https://github.com/katpb" target="_blank" rel="noreferrer">Repo / Notes ↗</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project-top">
+              <h3>Production Readiness Playbooks</h3>
+              <span class="pill">Ops • Reliability</span>
+            </div>
+            <p>
+              Created checklists and runbooks for production support without risky permissions:
+              access boundaries, dashboards, incident response, and safe debugging workflows.
+            </p>
+            <ul class="bullets">
+              <li>Clear “can do vs can’t do” support model</li>
+              <li>Standardized alerts + on-call response steps</li>
+              <li>Reduced time-to-diagnose recurring issues</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn link" href="#contact">Ask for details →</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project-top">
+              <h3>Developer Productivity Automation</h3>
+              <span class="pill">CI/CD • Tooling</span>
+            </div>
+            <p>
+              Built small automations (scripts, checks, dashboards) to shorten feedback loops:
+              build monitors, migration helpers, and guardrails for secure delivery.
+            </p>
+            <div class="project-links">
+              <a class="btn link" href="https://github.com/katpb" target="_blank" rel="noreferrer">GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project-top">
+              <h3>Personal Learning Labs</h3>
+              <span class="pill">K8s • AWS • Systems</span>
+            </div>
+            <p>
+              Hands-on experiments with Kafka, Kubernetes, and cloud patterns — distilled into notes and reusable templates.
+            </p>
+            <div class="project-links">
+              <a class="btn link" href="#contact">Want the templates? →</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="hint">
+          Tip: Replace these with your real projects and add 1–2 numbers (latency, scale, cost, throughput, time saved).
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Experience</h2>
+          <p>Short, high-signal highlights (great for recruiters and hiring managers).</p>
+        </div>
+
+        <div class="card">
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-dot" aria-hidden="true"></div>
+              <div>
+                <div class="tl-title">Tech Lead / Senior Engineer</div>
+                <div class="tl-meta">Backend • Cloud • Event-driven systems</div>
+                <p class="tl-text">
+                  Led delivery across services and integrations, balancing architecture, reliability, and team execution.
+                  Focused on production-grade observability, scaling, and pragmatic trade-offs.
+                </p>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot" aria-hidden="true"></div>
+              <div>
+                <div class="tl-title">Senior Backend Engineer</div>
+                <div class="tl-meta">Java • Spring • Kafka • AWS</div>
+                <p class="tl-text">
+                  Built and operated microservices with strong contracts and safe rollout practices.
+                  Improved incident response via dashboards, runbooks, and alert hygiene.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="note">
+            Want this section to match your exact resume/LinkedIn? Paste your current role history and I’ll rewrite it cleanly.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Best way to reach me + quick links.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Say hello</h3>
+            <p class="muted">
+              Add your email below. If you want, I can also add a simple contact form using a free service (Formspree).
+            </p>
+
+            <div class="contact-box">
+              <div><strong>Email:</strong> <span class="muted">your.email@example.com</span></div>
+              <div><strong>Location:</strong> <span class="muted">India</span></div>
+            </div>
+
+            <div class="cta-row">
+              <a class="btn primary" href="mailto:your.email@example.com">Email me</a>
+              <a class="btn ghost" href="https://github.com/katpb" target="_blank" rel="noreferrer">GitHub</a>
+              <!-- <a class="btn ghost" href="https://www.linkedin.com/in/your-handle/" target="_blank" rel="noreferrer">LinkedIn</a> -->
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>What I’m open to</h3>
+            <ul class="bullets">
+              <li>Backend / Platform roles (Java/Kotlin, distributed systems)</li>
+              <li>Cloud architecture and reliability projects</li>
+              <li>Consulting on Kafka pipelines, scaling, and observability</li>
+              <li>Mentoring teams on production readiness and delivery quality</li>
+            </ul>
+            <p class="muted small">
+              Optional: add a downloadable resume link (PDF) into this repo and link it here.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="muted">© <span id="year"></span> Kathir. Built on GitHub Pages.</div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./assets/script.js"></script>
+</body>
 </html>
